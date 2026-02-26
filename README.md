@@ -1,34 +1,32 @@
-name: Generate snake animation
+## Hi there, I'm Yenni Theresia Zalukhu 👋
 
-on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+![](img/github-header-banner.png)
 
-  workflow_dispatch:
+<!--
+**yenyen-zalukhu/yenyen-zalukhu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-  push:
-    branches:
-    - main
+Here are some ideas to get you started:
 
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
-    steps:
-      - name: generate snake.svg
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake.svg?palette=github-dark
+🔭 I’m currently learning on **Fasilkom-TI** *USU*
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yenni-zalukhu/yenni-zalukhu/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yenni-zalukhu/yenni-zalukhu/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/yenni-zalukhu/yenni-zalukhu/output/pacman-contribution-graph.svg">
+</picture>
 
-      - name: push snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+###
+
+<img src="https://raw.githubusercontent.com/yenni-zalukhu/yenni-zalukhu/output/snake.svg" alt="Snake animation" />
+
+###
